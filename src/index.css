@@ -12,6 +12,14 @@ body {
   background: var(--bg-color);
 }
 
+a {
+  text-decoration: none;
+
+  &:visited {
+    color: #fff;
+  }
+}
+
 :root {
   --bg-color: #18181b;
   --main-color: #f19409;

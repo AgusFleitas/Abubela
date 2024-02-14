@@ -42,20 +42,41 @@ const Home = () => {
       <div className={style.bottomImages}>
         <div className={style.services}>
           <a href='#'>
-            <p>PLATOS</p>
+            <p className={style.serviceTitle}>PLATOS</p>
             <img src={plates} alt='plates preview' />
+            <div className={style.servicesHover}>
+              <h4>NUESTROS PLATOS</h4>
+              <p>
+                Tenemos a tu disposición nuestro menú completo para que puedas
+                elegir tu plato favorito y ver su precio.
+              </p>
+            </div>
           </a>
         </div>
         <div className={style.services}>
           <a href='#'>
-            <p>EMPRESAS</p>
+            <p className={style.serviceTitle}>EMPRESAS</p>
             <img src={business} alt='business preview' />
+            <div className={style.servicesHover}>
+              <h4>CENA PARA EMPRESAS O EVENTOS</h4>
+              <p>
+                ¿Necesitas organizar una cena para tu empresa? Podes realizar
+                una reserva y consultar sobre la comida. ¡Tenemos menú completo!
+              </p>
+            </div>
           </a>
         </div>
         <div className={style.services}>
           <a href='#'>
-            <p>CONTACTO</p>
+            <p className={style.serviceTitle}>CONTACTO</p>
             <img src={contact} alt='contact preview' />
+            <div className={style.servicesHover}>
+              <h4>CONTACTA CON NOSOTROS</h4>
+              <p>
+                Puedes enviarnos un mensaje por WhatsApp, llamar a nuestro
+                teléfono o enviarnos un mail a través de nuestro formulario.
+              </p>
+            </div>
           </a>
         </div>
       </div>
