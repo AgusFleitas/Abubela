@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+
+@font-face {
+  font-family: "Aristotelica";
+  src: url("../../fonts/Aristotelica-DemiBold.ttf");
+  font-weight: bold;
+  font-style: bold;
+}
+
+.homeContainer {
+  margin: 2.5rem 2.5rem 0 2.5rem;
+  display: grid;
+  background: var(--bg-color);
+  color: var(--text-color);
+  grid-template-columns: 34.375rem 1fr 1fr;
+  grid-template-rows: 1fr 12.5rem;
+  grid-template-areas:
+    "image text text"
+    "bottom bottom bottom";
+}
+
+.outImgContainer {
+  grid-area: image;
+  padding: 0.9375rem;
+
+  img {
+    border-radius: 0.9375rem;
+    border: 3px solid var(--main-color);
+    width: 100%;
+    box-shadow: -5px 5px 10px black;
+  }
+}
+
+.mainText {
+  grid-area: text;
+  margin-top: 1.125rem;
+  padding: 0 6.25rem 0 0.625rem;
+
+  h3 {
+    font-family: "Aristotelica";
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-shadow: -2px 2px 5px black;
+    margin-bottom: 2.5rem;
+  }
+
+  p {
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 1.5862rem;
+    text-shadow: -2px 2px 3px black;
+    margin-bottom: 1.25rem;
+  }
+
+  box-icon {
+    padding-top: 2px;
+  }
+
+  .greeting {
+    display: inline-block;
+    font-family: "Aristotelica";
+    font-size: 1.5625rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .location {
+    display: inline-block;
+    margin-bottom: 0.625rem;
+  }
+}
+
+.bottomImages {
+  grid-area: bottom;
+  display: flex;
+  margin-top: 1.25rem;
+  padding: 0 5rem;
+  justify-content: space-around;
+
+  .services {
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      border-radius: 0.625rem;
+      border: 3px solid var(--main-color);
+    }
+
+    a {
+      display: inline-flex;
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+    }
+
+    p {
+      position: absolute;
+      color: var(--text-color);
+      font-family: 'Roboto Condensed';
+      font-size: 1.5rem;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-shadow: -3px 3px 5px black;
+    }
+  }
+}
