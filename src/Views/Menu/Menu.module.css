@@ -1,3 +1,11 @@
 .menuContainer {
-    background: rgb(255 255 255 / 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.mainContainer {
+    display: flex;
+
 }

@@ -62,3 +62,17 @@ export const plates = [
     }
   ];
   
+  export const desserts = [
+    {
+      name: "Torrija caramelizada con helado de vainilla.",
+      price: 5.50
+    },
+    {
+      name: "Coulant de chocolate con helado.",
+      price: 5.50
+    },
+    {
+      name: "Tarta de queso al horno.",
+      price: 5.50
+    }
+  ]
