@@ -7,13 +7,12 @@
   font-style: bold;
 }
 
-.homeContainer {
-  margin: 2.5rem 2.5rem 0 2.5rem;
+.homeContainer {  
   display: grid;
-  background: var(--bg-color);
   color: var(--text-color);
-  grid-template-columns: 34.375rem 1fr 1fr;
-  grid-template-rows: 1fr 12.5rem;
+  margin-top: 1.5rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 15.625rem;
   grid-template-areas:
     "image text text"
     "bottom bottom bottom";
@@ -22,6 +21,7 @@
 .outImgContainer {
   grid-area: image;
   padding: 0.9375rem;
+  margin-left: 1.875rem;
 
   .outImg {
     border-radius: 0.9375rem;
@@ -33,14 +33,14 @@
 
 .mainTextContainer {
   grid-area: text;
-  margin-top: 1.125rem;
-  padding: 0 6.25rem 0 0.625rem;
+  padding: 0 12.5rem 0 2.1875rem;
+  align-self: center;
 
   .mainTitle {
     font-family: "Aristotelica";
     font-weight: bold;
     font-size: 2.5rem;
-    text-shadow: -2px 2px 5px black;
+    text-shadow: -3px 3px 4px black;
     margin-bottom: 2.5rem;
   }
 
@@ -50,6 +50,7 @@
     font-size: 1.5862rem;
     text-shadow: -2px 2px 3px black;
     margin-bottom: 1.25rem;
+    text-align: justify;
   }
 
   .greeting {
@@ -102,7 +103,7 @@
       bottom: 0;
       left: 50%;
       transform: translate(-50%, -50%);
-      text-shadow: -3px 3px 5px black;
+      text-shadow: -5px 5px 5px black;
     }
 
     .servicesHover {
