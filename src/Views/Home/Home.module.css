@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap");
 
 @font-face {
   font-family: "Aristotelica";
@@ -23,7 +23,7 @@
   grid-area: image;
   padding: 0.9375rem;
 
-  img {
+  .outImg {
     border-radius: 0.9375rem;
     border: 3px solid var(--main-color);
     width: 100%;
@@ -31,12 +31,12 @@
   }
 }
 
-.mainText {
+.mainTextContainer {
   grid-area: text;
   margin-top: 1.125rem;
   padding: 0 6.25rem 0 0.625rem;
 
-  h3 {
+  .mainTitle {
     font-family: "Aristotelica";
     font-weight: bold;
     font-size: 2.5rem;
@@ -44,16 +44,12 @@
     margin-bottom: 2.5rem;
   }
 
-  p {
+  .mainText {
     font-family: "Roboto";
     font-weight: 300;
     font-size: 1.5862rem;
     text-shadow: -2px 2px 3px black;
     margin-bottom: 1.25rem;
-  }
-
-  box-icon {
-    padding-top: 2px;
   }
 
   .greeting {
@@ -81,27 +77,27 @@
     justify-content: center;
     position: relative;
     overflow: hidden;
-    
-    img {
+    filter: drop-shadow(-5px 5px 4px black);
+
+    .serviceImg {
       object-fit: cover;
       width: 100%;
       height: 100%;
       border-radius: 0.625rem;
       border: 3px solid var(--main-color);
-      box-shadow: -5px 5px 8px black;
     }
 
-    a {
+    .serviceLink {
       display: inline-flex;
       width: 100%;
       height: 100%;
-      text-decoration: none;
+      color: var(--text-color);
     }
 
     .serviceTitle {
       position: absolute;
       color: var(--text-color);
-      font-family: 'Roboto Condensed';
+      font-family: "Roboto Condensed";
       font-size: 1.5rem;
       bottom: 0;
       left: 50%;
@@ -116,23 +112,23 @@
       width: 100%;
       height: 100%;
       border-radius: 0.625rem;
-      background: linear-gradient(rgba(0, 0, 0, .1), var(--main-color));
+      background: linear-gradient(rgba(0, 0, 0, 0.1), var(--main-color));
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
       text-align: center;
-      padding: .7rem;
+      padding: 0.7rem;
       transform: translateY(100%);
-      transition: .5s ease;
+      transition: 0.5s ease;
 
-      h4 {
+      .hoverTitle {
         font-size: 1.1rem;
         margin-bottom: 1rem;
         font-family: "Roboto Condensed";
       }
 
-      p {
+      .hoverText {
         font-size: 1rem;
         font-family: "Roboto";
         font-weight: 300;
