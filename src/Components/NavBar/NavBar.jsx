@@ -11,8 +11,8 @@ const NavBar = () => {
         </a>
       </div>
       <nav className={style.navLinks}>
-        <a href='#'>INICIO</a>
-        <a href='#'>NUESTRA CARTA</a>
+        <a href='/'>INICIO</a>
+        <a href='/menu'>NUESTRA CARTA</a>
         <a href='#'>RESERVAS</a>
         <a href='#'>SOBRE NOSOTROS</a>
       </nav>
