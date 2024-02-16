@@ -5,7 +5,9 @@ import style from "./Menu.module.css";
 const Menu = () => {
   return (
     <div className={style.menuContainer}>
-      <h1 className={style.main}>Nuestro menú ¡Encuentra tu plato favorito!</h1>
+      <h1 className={style.mainTitle}>
+        Nuestro menú ¡Encuentra tu plato favorito!
+      </h1>
       <div className={style.mainContainer}>
         <div className={style.menu}>
           <h4 className={style.menuTitle}>MENU</h4>
@@ -19,30 +21,38 @@ const Menu = () => {
         <div className={style.menu}>
           <h4 className={style.menuTitle}>MENU</h4>
           {sandwiches.map((sandwich) => (
-            <div className={style.plateContainer} key={sandwich.name}>
-              <span className={style.sandwichTitle}>{sandwich.name}</span>
-              <p className={style.menuText}>{sandwich.description}</p>
-              <p className={style.menuText}>{sandwich.price}€</p>
+            <div className={style.sandwichContainer} key={sandwich.name}>
+              <div className={style.sandwichDetail}>
+                <span className={style.sandwichTitle}>{sandwich.name}</span>
+                <p className={style.sandwichPrice}>{sandwich.price}€</p>
+              </div>
+              <p className={style.sandwichDescription}>
+                {sandwich.description}
+              </p>
             </div>
           ))}
         </div>
         <div className={style.rightcolumn}>
           <div className={style.desserts}>
-          {desserts.map((dessert) => (
-            <div className={style.dessertContainer} key={dessert.name}>
-              <p className={style.menuText}>{dessert.name}</p>
-              <p className={style.menuText}>{dessert.price}€</p>
-            </div>
-          ))}
+            <h4 className={style.dessertTitle}>POSTRES</h4>
+            {desserts.map((dessert) => (
+              <div className={style.dessertContainer} key={dessert.name}>
+                <p className={style.menuText}>{dessert.name}</p>
+                <p className={style.menuText}>{dessert.price}€</p>
+              </div>
+            ))}
           </div>
-          <div>
-            <h3 className={style.businessTitle}>¿Buscas el menú para empresas?</h3>
+          <div className={style.business}>
+            <h3 className={style.businessTitle}>
+              ¿Buscas el menú para empresas?
+            </h3>
             <p className={style.businessText}>
               Contáctanos y con gusto te brindaremos información respecto a los
               menús disponibles para tu evento.
             </p>
             <p className={style.businessText}>
-              <span className={style.businessPhone}>Teléfono: </span> 659 52 84 36
+              <span className={style.businessPhone}>Teléfono: </span> 659 52 84
+              36
             </p>
           </div>
         </div>
