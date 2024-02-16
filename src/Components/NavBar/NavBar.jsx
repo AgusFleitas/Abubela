@@ -13,7 +13,7 @@ const NavBar = () => {
       <nav className={style.navLinks}>
         <a href='/'>INICIO</a>
         <a href='/menu'>NUESTRA CARTA</a>
-        <a href='#'>RESERVAS</a>
+        <a href='/booking'>RESERVAS</a>
         <a href='#'>SOBRE NOSOTROS</a>
       </nav>
     </div>

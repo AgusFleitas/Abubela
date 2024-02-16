@@ -1,0 +1,75 @@
+.bookingContainer {
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+
+  .bookingTitle {
+    font-family: "Aristotelica";
+    font-size: 2.5rem;
+    text-shadow: -3px 3px 5px black;
+  }
+
+  .bookingSubTitle {
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  .menusContainer {
+    display: flex;
+    justify-content: center;
+    height: 60vh;
+    gap: 2.5rem;
+    margin-top: 1.5rem;
+
+    .menuOne,
+    .menuTwo {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background: rgb(0 0 0 / 0.6);
+      width: 25%;
+      flex: none;
+      font-size: 0.9rem;
+      font-family: "Roboto";
+      font-weight: 400;
+      border: 3px solid var(--main-color);
+      border-radius: 0.625rem;
+      padding: 0.9375rem;
+
+      .menuNumber {
+        font-family: "Aristotelica";
+        color: var(--main-color);
+        font-size: 2rem;
+        text-align: center;
+      }
+
+      .menuTitle {
+        font-family: "Aristotelica";
+        font-size: 1.3rem;
+        color: var(--main-color);
+        text-align: center;
+      }
+
+      .starter,
+      .main,
+      .dessert {
+        display: flex;
+        flex-direction: column;
+        gap: 0.625rem;
+
+        .plateName {
+          color: var(--main-color);
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  .availability {
+    margin-top: 1.5625rem;
+    font-weight: 300;
+  }
+}
