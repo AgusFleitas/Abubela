@@ -47,7 +47,7 @@ const Home = () => {
       </div>
       <div className={style.bottomImages}>
         <div className={style.services}>
-          <a href='#' className={style.serviceLink}>
+          <a href='/menu' className={style.serviceLink}>
             <p className={style.serviceTitle}>PLATOS</p>
             <img
               src={plates}
@@ -64,7 +64,7 @@ const Home = () => {
           </a>
         </div>
         <div className={style.services}>
-          <a href='#' className={style.serviceLink}>
+          <a href='/booking' className={style.serviceLink}>
             <p className={style.serviceTitle}>EMPRESAS</p>
             <img
               src={business}
@@ -81,7 +81,7 @@ const Home = () => {
           </a>
         </div>
         <div className={style.services}>
-          <a href='#' className={style.serviceLink}>
+          <a href='/contact' className={style.serviceLink}>
             <p className={style.serviceTitle}>CONTACTO</p>
             <img
               src={contact}
