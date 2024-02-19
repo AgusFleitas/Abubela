@@ -7,6 +7,7 @@ import Home from "./Views/Home/Home.jsx";
 import Menu from "./Views/Menu/Menu.jsx";
 import Booking from "./Views/Booking/Booking.jsx";
 import About from "./Views/About/About.jsx";
+import Contact from "./Views/Contact/Contact.jsx";
 
 import style from "./App.module.css";
 
@@ -19,6 +20,7 @@ function App() {
         <Route path='/menu' element={<Menu />} />
         <Route path='/booking' element={<Booking />} />
         <Route path='/about' element={<About />} />
+        <Route path='/contact' element={<Contact />} />
       </Routes>
       <Footer />
     </div>

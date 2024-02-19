@@ -1,7 +1,7 @@
 .homeContainer {  
   display: grid;
   color: var(--text-color);
-  margin-top: 1.5rem;
+  margin: 1.5rem 5rem 0 5rem;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 15.625rem;
   grid-template-areas:
@@ -29,7 +29,7 @@
 
 .mainTextContainer {
   grid-area: text;
-  padding: 0 12.5rem 0 2.1875rem;
+  padding: 0.9375rem 12.5rem 0.9375rem 2.1875rem;
   align-self: center;
 
   .mainTitle {

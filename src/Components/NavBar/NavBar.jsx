@@ -14,7 +14,7 @@ const NavBar = () => {
         <a href='/'>INICIO</a>
         <a href='/menu'>NUESTRA CARTA</a>
         <a href='/booking'>RESERVAS</a>
-        <a href='/about'>SOBRE NOSOTROS</a>
+        <a href='/about'>NOSOTROS</a>
         <a href='/contact'>CONTACTO</a>
       </nav>
     </div>
