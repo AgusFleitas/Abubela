@@ -17,7 +17,9 @@
 
 body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("./assets/interior.jpg");
+    url("./assets/bg-abubela.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 a {
