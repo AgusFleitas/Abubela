@@ -91,8 +91,8 @@ const Home = () => {
             <div className={style.servicesHover}>
               <h4 className={style.hoverTitle}>CONTACTA CON NOSOTROS</h4>
               <p className={style.hoverText}>
-                Puedes enviarnos un mensaje por WhatsApp, llamar a nuestro
-                teléfono o enviarnos un mail a través de nuestro formulario.
+                Puedes enviarnos un mensaje por WhatsApp o llamar a nuestro
+                teléfono.
               </p>
             </div>
           </a>

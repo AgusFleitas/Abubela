@@ -97,7 +97,7 @@
       position: absolute;
       color: var(--text-color);
       font-family: "Roboto Condensed";
-      font-size: 1.5rem;
+      font-size: 2rem;
       bottom: 0;
       left: 50%;
       transform: translate(-50%, -50%);
@@ -122,15 +122,17 @@
       transition: 0.5s ease;
 
       .hoverTitle {
-        font-size: 1.1rem;
         margin-bottom: 1rem;
+        font-size: 1.1rem;
         font-family: "Roboto Condensed";
+        text-shadow: -2px 2px 2px black;
       }
 
       .hoverText {
         font-size: 1rem;
         font-family: "Roboto";
-        font-weight: 300;
+        font-weight: 400;
+        text-shadow: -1px 1px 2px black;
       }
     }
 
